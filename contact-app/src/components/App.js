@@ -21,7 +21,7 @@ function App() {
   return <div>
     <Header/>
     <AddContact/>
-    <ContactList/>
+    <ContactList contacts = {contacts}/>
   </div>;
 }
 
