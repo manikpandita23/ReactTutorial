@@ -3,8 +3,13 @@ import 'C:/Users/manik/OneDrive/Desktop/Github/ReactTutorial/contact-app/src/App
 import Header from './Header';
 import AddContact from './AddContact';
 import ContactList from './ContactList';
+
 function App() {
-  return <div>Hello World</div>;
+  return <div>
+    <Header/>
+    {/*<AddContact/>
+    <ContactList/>*/}
+  </div>;
 }
 
 export default App;
