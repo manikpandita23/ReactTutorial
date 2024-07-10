@@ -8,3 +8,5 @@ npm install mongoose
 npm start (save index.js and run it)
 
 npm i jsonwebtoken joi joi-password-complexity
+
+npm i bcrypt (for generation of JWTPRIVATEKEY)
