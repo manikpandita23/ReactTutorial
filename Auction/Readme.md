@@ -13,4 +13,5 @@ npm i bcrypt (for generation of JWTPRIVATEKEY)
 
 create a directory named frontend
 
-Then create a react app (npx create-react-app .)
+Then create a react app (npx create-react-app .).
+npm install axios react-router-dom
