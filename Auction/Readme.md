@@ -10,3 +10,7 @@ npm start (save index.js and run it)
 npm i jsonwebtoken joi joi-password-complexity
 
 npm i bcrypt (for generation of JWTPRIVATEKEY)
+
+create a directory named frontend
+
+Then create a react app (npx create-react-app .)
