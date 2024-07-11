@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./style.module.css";
 import img from '../../image/food.jpg'
 const Main = () => {
     const handleLogout = () => {
