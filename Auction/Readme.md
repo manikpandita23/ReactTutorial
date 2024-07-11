@@ -1,9 +1,9 @@
 ```markdown
-# Auction Project
+### Auction Project
 
 This project is a web application for an auction system, built using Node.js (Express) for the backend and React.js for the frontend.
 
-## Backend Setup
+### Backend Setup
 
 ### 1. Create Backend Directory
 
