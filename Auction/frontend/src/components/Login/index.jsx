@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 
 const Login = () => {
@@ -13,12 +13,16 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("Form submitted");
         try {
-            const url = "http://localhost:5000/api/auth/login";
+            const url = "http://localhost:3000/api/auth/login";
+            console.log("Sending request to:", url);
             const { data: res } = await axios.post(url, data);
+            console.log("Response received:", res);
             localStorage.setItem("token", res.data);
             window.location = "/";
         } catch (error) {
+            console.error("Error during login:", error);
             if (error.response && error.response.status === 400) {
                 setError(error.response.data.message);
             }
@@ -51,7 +55,7 @@ const Login = () => {
                         />
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type="submit" className={styles.green_btn}>
-                            Validate
+                            Submit 
                         </button>
                     </form>
                 </div>

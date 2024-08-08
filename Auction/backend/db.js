@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const dotenv = require ("dotenv")
 module.exports = async () => {
     const connectionParams = {
         useNewUrlParser: true,
